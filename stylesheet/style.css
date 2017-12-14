@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Lato');
+@import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400');
+@import '_main.css';
 
 /* Variables should follow the `--component-state-property-size` formula for */
 
@@ -23,7 +24,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Lato', sans-serif;
+  font-family: 'Roboto', sans-serif;
   font-size: inherit;
 }
 
@@ -116,10 +117,10 @@ main {
 }
 
 section {
-  height: 100vh;
+  height: calc(100vh - 56px);
   width: 100%;
   background-color: pink;
-  box-shadow: inset 0px 0px 0px 10px white;
+  /* box-shadow: inset 0px 0px 0px 10px white; */
   display: flex;
   align-items: center;
   justify-content: center;
