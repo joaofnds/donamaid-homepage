@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
+/* Variables should follow the `--component-state-property-size` formula for */
+
+
+/* consistent naming. Ex: --nav-link-disabled-color and --modal-content-box-shadow-xs. */
+
+:root {
+  --pink: #c41780;
+  --purple: #7520b9;
+  --gradient: linear-gradient(to right, var(--pink), var(--purple));
+  --animation-speed-normal: 300ms;
+  --animation-speed-slow: 600ms;
+  --nav-menu-width-mobile: 60vw;
+}
+
+
+/* General */
+
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Lato', sans-serif;
+  font-size: inherit;
+}
+
+html {
+  font-size: 16px;
+  position: relative;
+}
+
+body {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+ul {
+  list-style: none;
+  padding: 8px;
+}
+
+button {
+  padding: 8px 16px;
+  color: white;
+  background: var(--purple);
+  border: 2px solid white;
+  border-radius: 5px;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
+
+/* header */
+
+header {
+  height: 56px;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  background: var(--purple);
+  /* Old Browsers */
+  background: var(--gradient);
+  /*Standard*/
+  font-size: 1.2rem;
+}
+
+header img#logo {
+  height: 36px;
+}
+
+header button#nav-toggle {
+  display: none;
+}
+
+header nav {
+  margin-left: auto;
+}
+
+header div#nav-menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  transition: transform ease-in-out var(--animation-speed-normal);
+  /* 	will-change: transform; */
+}
+
+header div#nav-menu>* {
+  margin: 0px 8px;
+}
+
+header div#nav-menu a {
+  color: white;
+}
+
+header div#nav-menu button {
+  background-color: rgba(0, 0, 0, 0);
+}
+
+main {
+  max-height: calc(100vh - 56px);
+  /* screen height - header */
+  overflow-x: auto;
+  position: relative;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-color: pink;
+  box-shadow: inset 0px 0px 0px 10px white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 810px) {
+  header button#nav-toggle {
+    display: inline;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    margin: 0;
+    padding: 0;
+  }
+  .octicon {
+    stroke: #fff;
+  }
+  header div#nav-menu {
+    position: absolute;
+    height: 100vh;
+    width: 60vw;
+    top: 0px;
+    left: calc(100%);
+    background: var(--gradient);
+    flex-direction: column;
+    z-index: 500;
+  }
+  header div#nav-menu.visible {
+    transform: translateX(calc(var(--nav-menu-width-mobile) * -1));
+  }
+  header div#nav-menu ul,
+  header div#nav-menu li {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    height: 76px;
+    text-align: center;
+  }
+  header div#nav-menu a {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+  }
+  header div#nav-menu button {
+    margin-top: auto;
+    width: 100%;
+    height: 56px;
+    border-radius: 0px;
+  }
+}
+
+div#obfuscator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, .3);
+  z-index: 0;
+  visibility: hidden;
+  opacity: 0;
+  transition: all ease-in-out var(--animation-speed-normal);
+}
+
+div#obfuscator.visible {
+  visibility: initial;
+  opacity: 1;
+}
