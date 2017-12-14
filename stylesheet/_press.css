@@ -1,0 +1,33 @@
+#press {
+  height: auto;
+  background-color: #eee;
+  padding: 2rem;
+
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+}
+
+#press a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#press img {
+  width: 23vw;
+  max-width: 300px;
+  filter: grayscale(100%);
+  transition: filter ease var(--animation-speed-normal);
+}
+
+#press img:hover {
+  filter: grayscale(0%);
+}
+
+@media screen and (max-width: 810px) {
+  #press {
+    grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+    grid-gap: 2rem;
+  }
+}
