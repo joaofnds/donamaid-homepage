@@ -2,6 +2,7 @@
 @import '_main.css';
 @import '_press.css';
 @import '_selling-points.css';
+@import '_how-it-works.css';
 
 /* Variables should follow the `--component-state-property-size` formula for */
 
@@ -120,16 +121,6 @@ main {
 
 main a {
   color: var(--pink);
-}
-
-section {
-  height: calc(100vh - 56px);
-  width: 100%;
-  background-color: pink;
-  /* box-shadow: inset 0px 0px 0px 10px white; */
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 @media screen and (max-width: 810px) {

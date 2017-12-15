@@ -1,0 +1,36 @@
+#how-it-works {
+  background-color: white;
+  padding: 16px;
+  min-height: 60vh;
+}
+
+#how-it-works h1 {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+#steps {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#steps .step {
+  max-width: 300px;
+  text-align: center;
+  padding: 8px;
+}
+
+#steps .step > * {
+  margin: 8px;
+}
+
+@media screen and (max-width: 810px) {
+  #steps {
+    flex-direction: column;
+    align-items: center;
+  }
+  #steps .step {
+    max-width: 80vw;
+  }
+}
