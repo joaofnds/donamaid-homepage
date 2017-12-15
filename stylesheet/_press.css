@@ -1,6 +1,5 @@
 .press {
   height: auto;
-  max-height: 30vh;
   background-color: #eee;
   padding: 2rem;
 
@@ -16,7 +15,7 @@
 }
 
 .press img {
-  width: 23vw;
+  width: 20vw;
   max-width: 300px;
   filter: grayscale(100%);
   transition: filter ease var(--animation-speed-normal);

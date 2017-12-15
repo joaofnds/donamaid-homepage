@@ -9,6 +9,10 @@
   justify-content: space-around;
 }
 
+#selling-points .selling-point-item img {
+  width: 50%;
+}
+
 #selling-points div {
   max-width: 20vw;
   text-align: center;
