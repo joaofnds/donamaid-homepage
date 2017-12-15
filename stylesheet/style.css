@@ -4,6 +4,7 @@
 @import '_selling-points.css';
 @import '_how-it-works.css';
 @import '_what-people-say.css';
+@import '_benefits.css';
 
 /* Variables should follow the `--component-state-property-size` formula for */
 
@@ -187,4 +188,16 @@ div#obfuscator {
 div#obfuscator.visible {
   visibility: initial;
   opacity: 1;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border: none;
+  background: var(--pink);
+}
+
+.inverse {
+  background: white;
+  color: var(--pink);
+  border: 3px solid var(--pink);
 }

@@ -1,0 +1,50 @@
+#benefits {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  height: 50vh;
+}
+
+#benefits .benefit {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#benefits .benefit h2 {
+  font-size: 2rem;
+  margin: 2rem;
+}
+
+#benefits .benefit a {
+  margin: 2rem;
+  margin-top: auto;
+}
+
+#benefits .benefit ul li {
+  font-size: 1.4rem;
+}
+
+#benefits .benefit ul li:before {
+  content: '✔';
+  font-size: 3rem;
+  color: lime;
+}
+
+#benefits .benefit:nth-child(1) {
+  color: white;
+  background: var(--gradient);
+}
+
+#benefits .benefit:nth-child(2) {
+  color: #212121;
+  background: var(--gradient);
+}
+
+@media screen and (max-width: 810px) {
+  #benefits {
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+  }
+}
