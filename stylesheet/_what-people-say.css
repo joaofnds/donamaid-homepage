@@ -1,0 +1,20 @@
+#what-people-say {
+  background: var(--gradient);
+  padding: 2rem;
+}
+
+#what-people-say h1 {
+  color: white;
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+#what-people-say .fb-comments {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}
+
+#what-people-say img {
+  margin: 0 auto;
+}
