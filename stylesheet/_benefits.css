@@ -1,7 +1,7 @@
 #benefits {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  height: 50vh;
+  height: auto;
 }
 
 #benefits .benefit {
@@ -9,6 +9,8 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  height: 60vh;
 }
 
 #benefits .benefit h2 {
@@ -43,8 +45,15 @@
 
 @media screen and (max-width: 810px) {
   #benefits {
-    height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(2, 1fr);
+  }
+
+  #benefits .benefit {
+    height: auto;
+  }
+
+  #benefits .benefit > * {
+    margin: 1rem 2rem;
   }
 }
