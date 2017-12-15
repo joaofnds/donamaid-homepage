@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto:200,300,400');
 @import '_main.css';
 @import '_press.css';
+@import '_selling-points.css';
 
 /* Variables should follow the `--component-state-property-size` formula for */
 
@@ -26,7 +27,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Roboto', sans-serif;
-  font-size: inherit;
+  font-size: 18px;
 }
 
 html {
@@ -115,6 +116,10 @@ main {
   /* screen height - header */
   overflow-x: auto;
   position: relative;
+}
+
+main a {
+  color: var(--pink);
 }
 
 section {

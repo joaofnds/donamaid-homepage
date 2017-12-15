@@ -1,5 +1,6 @@
 #press {
   height: auto;
+  max-height: 30vh;
   background-color: #eee;
   padding: 2rem;
 

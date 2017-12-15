@@ -1,0 +1,31 @@
+#selling-points {
+  background-color: white;
+  height: 60vh;
+  padding: 2rem;
+
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+#selling-points div {
+  max-width: 20vw;
+  text-align: center;
+}
+
+#selling-points div > * {
+  margin: 1rem;
+}
+
+@media screen and (max-width: 810px) {
+  #selling-points {
+    height: auto;
+    flex-direction: column;
+  }
+
+  #selling-points div {
+    max-width: 80vw;
+    margin: 2rem 1rem;
+  }
+}

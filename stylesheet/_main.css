@@ -42,10 +42,6 @@ section#main {
   color: var(--pink);
 }
 
-#main a {
-  color: var(--pink);
-}
-
 @media screen and (max-width: 810px) {
   #main h1 {
     font-size: 1.4rem;
