@@ -1,4 +1,4 @@
-#press {
+.press {
   height: auto;
   max-height: 30vh;
   background-color: #eee;
@@ -9,25 +9,25 @@
   grid-gap: 1rem;
 }
 
-#press a {
+.press a {
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-#press img {
+.press img {
   width: 23vw;
   max-width: 300px;
   filter: grayscale(100%);
   transition: filter ease var(--animation-speed-normal);
 }
 
-#press img:hover {
+.press img:hover {
   filter: grayscale(0%);
 }
 
 @media screen and (max-width: 810px) {
-  #press {
+  .press {
     grid-template: repeat(2, 1fr) / repeat(2, 1fr);
     grid-gap: 2rem;
   }
