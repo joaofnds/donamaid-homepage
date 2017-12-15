@@ -18,3 +18,10 @@
 #what-people-say img {
   margin: 0 auto;
 }
+
+@media screen and (max-width: 810px) {
+  #what-people-say .fb-comments {
+    grid-template-columns: 1fr;
+    grid-gap: 2rem;
+  }
+}
