@@ -21,6 +21,10 @@
   padding: 8px;
 }
 
+#steps .step img {
+  max-height: 20vh;
+}
+
 #steps .step > * {
   margin: 8px;
 }
