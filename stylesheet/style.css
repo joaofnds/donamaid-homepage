@@ -2,6 +2,7 @@
 @import '_main.css';
 @import '_press.css';
 @import '_selling-points.css';
+@import '_slider.css';
 @import '_how-it-works.css';
 @import '_what-people-say.css';
 @import '_benefits.css';
@@ -190,6 +191,12 @@ div#obfuscator {
 div#obfuscator.visible {
   visibility: initial;
   opacity: 1;
+}
+
+section#stories {
+  height: 100vh;
+  white-space: nowrap;
+  overflow-x: hidden;
 }
 
 .btn {

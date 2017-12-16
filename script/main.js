@@ -1,6 +1,7 @@
 const navToggleBtn = document.querySelector('button#nav-toggle');
 const navEl = document.querySelector(navToggleBtn.dataset.toggle);
 const obfuscator = document.querySelector('#obfuscator');
+const slider = document.querySelector('.slider');
 
 class NavController {
   constructor(navEl, toggleBtn, obfuscator) {
@@ -44,3 +45,13 @@ if (navCloseEls) {
 
 // Hide menu when resize over 810px
 document.body.onresize = () => (document.body.clientWidth >= 810 && navCtrl.hide())
+
+// slider
+function makeSliderMover(s) {
+  return function(i) {
+    const move = s.children[i].offsetLeft
+    s.style.transform = `translateX(-${move}px)`
+  }
+}
+
+const moveToChidren = makeSliderMover(slider);

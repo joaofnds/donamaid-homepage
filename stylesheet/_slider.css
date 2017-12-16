@@ -1,0 +1,12 @@
+section#stories .slider {
+  height: 100%;
+  background: pink;
+  transition: transform ease-in-out 300ms;
+}
+
+section#stories .slider div {
+  background-color: lightgreen;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
