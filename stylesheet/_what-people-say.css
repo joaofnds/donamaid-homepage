@@ -17,11 +17,23 @@
 
 #what-people-say img {
   margin: 0 auto;
+  width: 100%;
+}
+
+#what-people-say img:nth-child(2) {
+  grid-row: 1 / 3;
+  grid-column: 2;
 }
 
 @media screen and (max-width: 810px) {
   #what-people-say .fb-comments {
+    grid-template-rows: 1fr;
     grid-template-columns: 1fr;
     grid-gap: 2rem;
+  }
+
+  #what-people-say img:nth-child(2) {
+    grid-row: unset;
+    grid-column: unset;
   }
 }
