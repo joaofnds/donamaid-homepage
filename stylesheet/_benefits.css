@@ -15,12 +15,11 @@
 
 #benefits .benefit h2 {
   font-size: 2rem;
-  margin: 2rem;
+  margin: 1rem;
 }
 
 #benefits .benefit a {
   margin: 2rem;
-  margin-top: auto;
 }
 
 #benefits .benefit ul li {
@@ -35,12 +34,28 @@
 
 #benefits .benefit:nth-child(1) {
   color: white;
-  background: var(--gradient);
+
+  background-image:
+    linear-gradient(
+    rgba(117, 32, 185, .7),
+    rgba(117, 32, 185, .7)
+    ),
+    url('/assets/sofa.jpeg');
+  background-size: 150%;
+  background-position: 100% 50%;
 }
 
 #benefits .benefit:nth-child(2) {
   color: #212121;
-  background: var(--gradient);
+
+  background-image:
+    linear-gradient(
+    rgba(196, 23,128,.7),
+    rgba(196, 23,128,.7)
+    ),
+    url('/assets/escritorio.jpg');
+  background-size: 150%;
+  background-position: 0% 50%;
 }
 
 @media screen and (max-width: 810px) {
