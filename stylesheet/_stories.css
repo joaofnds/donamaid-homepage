@@ -1,0 +1,55 @@
+section#stories {
+  white-space: nowrap;
+  overflow-x: hidden;
+}
+
+.storie {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  color: white;
+  padding: 2rem;
+}
+
+.storie > * {
+  margin: 2rem;
+}
+
+.storie u,
+.storie h2 {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.storie blockquote:before,
+.storie blockquote:after {
+  content: "\""
+}
+
+.storie blockquote:before,
+.storie blockquote:after,
+.storie blockquote {
+  width: 50%;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  white-space: normal;
+  text-align: center;
+}
+
+.storie a {
+  margin-bottom: 0;
+}
+
+.storie button {
+  background: var(--pink);
+  border: none;
+  padding: 1rem 3em;
+}
+
+@media screen and (max-width: 810px) {
+  .storie blockquote {
+    width: 90%;
+  }
+}

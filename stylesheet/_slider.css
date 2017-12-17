@@ -1,12 +1,34 @@
-section#stories .slider {
+.slider {
   height: 100%;
   background: pink;
   transition: transform ease-in-out 300ms;
 }
 
-section#stories .slider div {
-  background-color: lightgreen;
+.slider .slider-item {
+  background-image: url('/assets/eye-for-ebony.jpg');
+  background-size: cover;
+  background-position: 50% 0%;
   display: inline-block;
   width: 100%;
   height: 100%;
+}
+
+.slider-menu i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--pink);
+  cursor: pointer;
+}
+
+.slider-menu i.active {
+  background-color: white;
+  box-shadow: inset 0px 0px 0px 5px var(--pink);
+}
+
+@media screen and (max-width: 810px) {
+  .slider-menu i {
+    margin: 0 .5rem;
+  }
 }

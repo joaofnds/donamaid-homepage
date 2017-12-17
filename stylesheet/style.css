@@ -8,6 +8,7 @@
 @import '_benefits.css';
 @import '_faq.css';
 @import '_footer.css';
+@import '_stories.css';
 
 /* Variables should follow the `--component-state-property-size` formula for */
 
@@ -191,12 +192,6 @@ div#obfuscator {
 div#obfuscator.visible {
   visibility: initial;
   opacity: 1;
-}
-
-section#stories {
-  height: 100vh;
-  white-space: nowrap;
-  overflow-x: hidden;
 }
 
 .btn {
