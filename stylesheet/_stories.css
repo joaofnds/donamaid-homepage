@@ -15,7 +15,8 @@ section#stories {
 
   color: white;
   padding: 2rem;
-	min-height: 80vh;
+	min-height: 90vh;
+	height: 100%;
 }
 
 .storie > * {
@@ -57,4 +58,8 @@ section#stories {
   .storie blockquote {
     width: 90%;
   }
+	.storie {
+		background-position: 60% 0%;
+		padding: .8rem;
+	}
 }

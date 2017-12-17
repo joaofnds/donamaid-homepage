@@ -1,10 +1,14 @@
 .slider {
   background: pink;
   transition: transform ease-in-out 300ms;
+	width: 300%;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
 }
 
 .slider .slider-item {
-  display: inline-block;
+	width: 100%;
 }
 
 .slider-menu i {
