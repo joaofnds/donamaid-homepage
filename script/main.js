@@ -54,4 +54,4 @@ function makeSliderMover(s) {
   }
 }
 
-const moveToChidren = makeSliderMover(slider);
+const moveToChildren = makeSliderMover(slider);
