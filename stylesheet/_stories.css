@@ -4,13 +4,18 @@ section#stories {
 }
 
 .storie {
+  background-image: url('/assets/eye-for-ebony.jpg');
+  background-size: cover;
+  background-position: 50% 0%;
+
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+
   color: white;
   padding: 2rem;
+	min-height: 80vh;
 }
 
 .storie > * {

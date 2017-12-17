@@ -1,0 +1,88 @@
+section#contacts .nav {
+	grid-area: nav;
+}
+
+section#contacts .services {
+	grid-area: services;
+}
+
+section#contacts .cities {
+	grid-area: cities;
+}
+
+section#contacts .contact {
+	grid-area: contact;
+}
+
+section#contacts #about {
+	grid-area: about;
+
+	width: 50%;
+	margin: 0 auto;
+	text-align: center;
+	background-color: var(--pink);
+	margin-top: -1rem;
+	margin-bottom: -1rem;
+}
+
+#about img {
+	width: 50%;
+}
+
+#about p {
+	width: 20vw;
+	margin: 1rem auto;
+	text-align: right;
+}
+
+section#contacts ul {
+	padding: 1rem 0;
+	line-height: 1.5rem;
+}
+
+section#contacts .nav ul {
+	line-height: 1.8rem;
+}
+
+section#contacts a {
+	color: white;
+}
+
+section#contacts {
+	display: grid;
+	grid-template: repeat(3, 1fr) / repeat(4, 1fr);
+	grid-template-areas:
+		"nav      cities  about about"
+		"nav      contact about about"
+		"services contact about about";
+	grid-gap: 1rem;
+
+	background: var(--gradient);
+	color: white;
+	padding: 1rem;
+}
+
+section#contacts > * {
+	padding: 1rem;
+}
+
+@media screen and (max-width: 810px) {
+	section#contacts {
+		display: flex;
+		flex-direction: column;
+	}
+	section#contacts > * {
+		height: auto;
+		width: 80%;
+		margin: 1rem auto;
+	}
+
+	section#contacts #about {
+		width: 80%;
+		margin: 1rem auto;
+	}
+
+	section#contacts #about p {
+		width: 100%;
+	}
+}
