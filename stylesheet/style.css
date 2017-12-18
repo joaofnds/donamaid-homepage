@@ -134,6 +134,10 @@ main a {
   color: var(--pink);
 }
 
+.center {
+  text-align: center;
+}
+
 @media screen and (max-width: 810px) {
   header button#nav-toggle {
     display: inline;
