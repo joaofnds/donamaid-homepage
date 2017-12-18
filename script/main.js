@@ -55,3 +55,21 @@ function makeSliderMover(s) {
 }
 
 const moveToChildren = makeSliderMover(slider);
+
+const lis = document.querySelectorAll('.help li')
+Array.from(lis).forEach(li => li.addEventListener('click', () => toggleAnswerVisibility(li)))
+
+function toggleAnswerVisibility(listItem) {
+
+  for (li of document.querySelectorAll('.help li.show-answer')) {
+    if (li != listItem) {
+      li.classList.remove('show-answer');
+    }
+  }
+
+  if (listItem.classList.contains('show-answer')) {
+    listItem.classList.remove('show-answer');
+  } else {
+    listItem.classList.add('show-answer');
+  }
+}

@@ -19,8 +19,47 @@
   padding: 1rem 0;
 }
 
+#faq .help li .answer {
+	display: block;
+  max-height: 0;
+  visibility: hidden;
+  opacity: 0;
+	transition: all ease-in-out 600ms;
+}
+
+#faq .help li.show-answer .answer {
+  visibility: visible;
+  opacity: 1;
+  max-height: 100vh;
+  height: auto;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
 #faq .help ul li {
   line-height: 2rem;
+  border-bottom: 1px solid rgba(0,0,0,.2);
+  position: relative;
+	display: block;
+  transition: all ease-in-out 600ms;
+  cursor: pointer;
+}
+
+#faq .help ul li:after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  right: 0;
+  width: 10px;
+  height: 10px;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  transform: rotate(-45deg);
+  transition: all ease-in-out var(--animation-speed-normal);
+}
+
+#faq .help ul li.show-answer:after {
+  transform: rotate(45deg);
 }
 
 #faq button {
